@@ -1,0 +1,51 @@
+header {
+  border: 1px solid lightgrey;
+}
+
+body {
+  background-image: url('https://github.com/tyreil/web_1_project_2/blob/master/assets/textures/fabric_plaid.png?raw=true');
+  border: 1px solid lightgrey;
+  height: 100vh;
+}
+
+footer {
+  border: 1px solid lightgrey;
+  
+}
+
+p {
+  text-align: center;
+}
+
+.slider {
+  border: 1em solid white;
+  height: 30em;
+  width: 70em;
+  background: grey;
+  
+  margin: 5em auto;
+}
+
+.boxes {
+  border: 1px solid grey;
+  height: 60em;
+  width: 70em;
+  
+  margin: 0 auto;
+}
+
+.socialmedia {
+  max-height: 10px;
+}
+
+.banner {
+  height: 3em;
+  background: darkgrey;
+  
+}
+
+a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: grey;
+}
