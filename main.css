@@ -1,5 +1,28 @@
+
+
 header {
   border: 1px solid lightgrey;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  
+  padding: 1em 10em 1em 10em;
+}
+
+.left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  width: 30em;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 body {
@@ -9,15 +32,25 @@ body {
 }
 
 footer {
-  border: 1px solid lightgrey;
+  display: flex;
+  justify-content: space-between;
   
+  background-image: url('https://github.com/tyreil/web_1_project_2/blob/master/assets/textures/az_subtle.png?raw=true');
+  border: 1px solid lightgrey;
+  height: 15em;
+  padding-top: 1em;
 }
 
 p {
   text-align: center;
 }
 
+/************************/
+
 .slider {
+  display: flex;
+  align-content: flex-end;
+  
   border: 1em solid white;
   height: 30em;
   width: 70em;
@@ -27,21 +60,51 @@ p {
 }
 
 .boxes {
-  border: 1px solid grey;
-  height: 60em;
-  width: 70em;
+  display: flex;
+  justify-content: space-around;
+  align-content: space-around;
+  flex-wrap: wrap;
   
+  height: 37em;
+  width: 70em;
   margin: 0 auto;
 }
 
-.socialmedia {
-  max-height: 10px;
+.twitter,
+.facebook {
+  max-height: 1em;
 }
 
 .banner {
   height: 3em;
   background: darkgrey;
+}
+
+.box {
+  border: 1px solid grey;
+  height: 10em;
+  width: 15em;
   
+  background: grey;
+}
+
+.viewmore {
+  background-color: grey;
+  height: 2em;
+  width: 10em;
+  text-align: center;
+  
+  padding-top: 1em;
+  margin: 2em auto;
+}
+
+.eh {
+  display: flex;
+  justify-content: center;
+  
+  height: 3em;
+  background-color: grey;
+  box-shadow: 0px 6px 8px #888;
 }
 
 a {
