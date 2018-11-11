@@ -62,14 +62,14 @@ body {
 footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
 
   background-image: url('https://github.com/tyreil/web_1_project_2/blob/master/assets/textures/az_subtle.png?raw=true');
   background-color: #b5b5a1;
   background-blend-mode: multiply;
   border: 1px solid lightgrey;
-  height: 15em;
-  width: 100%;
-  padding-top: 1em;
+  height: 20em;
   padding: 1em 2em 1em 2em;
 }
 
@@ -207,9 +207,16 @@ p {
   align-items: center;
 
   height: 3em;
+  width: 100%;
   background-color: #54544f;
   color: white;
   box-shadow: 0px 6px 8px #888;
+  margin: 0;
+}
+
+.lower {
+  display: flex;
+  justify-content: space-between;
 }
 
 #tu {
@@ -250,6 +257,7 @@ a {
   text-align: left;
   line-height: 175%;
 }
+
 
 #rmore {
   font-size: 14px;
