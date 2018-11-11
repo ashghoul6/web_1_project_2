@@ -1,3 +1,15 @@
+@font-face {
+  font-family: museo;
+  src: url('assets/fonts/museo/museo-300-webfont.ttf');
+}
+
+a,
+p,
+div {
+  font-family: museo;
+  font-weight: 500;
+}
+
 header {
   width: 72em;
   margin: 0 auto;
@@ -8,18 +20,31 @@ header {
   justify-content: space-between;
 }
 
+.bottom,
 .left {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
 
+.bottom {
+  font-size: 14px;
+  width: 25em;
+}
+
+.left {
   width: 30em;
 }
+
 
 .right {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+}
+
+#login {
+  color: #bdbda6;
 }
 
 .smedia {
@@ -30,6 +55,8 @@ header {
 body {
   background-image: url('https://github.com/tyreil/web_1_project_2/blob/master/assets/textures/fabric_plaid.png?raw=true');
   height: 100vh;
+  margin: 0;
+  padding: 2em 0 0 0;
 }
 
 footer {
@@ -37,10 +64,11 @@ footer {
   justify-content: space-between;
 
   background-image: url('https://github.com/tyreil/web_1_project_2/blob/master/assets/textures/az_subtle.png?raw=true');
-  background-color: #a09f92;
+  background-color: #b5b5a1;
   background-blend-mode: multiply;
   border: 1px solid lightgrey;
   height: 15em;
+  width: 100%;
   padding-top: 1em;
   padding: 1em 2em 1em 2em;
 }
@@ -72,6 +100,9 @@ p {
   justify-content: flex-end;
   align-items: center;
   padding-right: 1.5em;
+
+  font-size: 18px;
+  color: white;
 }
 
 #la,
@@ -105,7 +136,7 @@ p {
 .twitter,
 .facebook {
   height: 2em;
-  border-radius: 5%;
+  border-radius: 8%;
   margin: 0 0 .5em .5em;
 }
 
@@ -126,9 +157,14 @@ p {
 }
 
 #sbar {
+  display: flex;
+  align-items: center;
+
   background-color: white;
-  width: 18em;
-  height: 2em;
+  color: grey;
+  width: 22em;
+  height: 2.5em;
+  padding-left: 1em;
 }
 
 .box {
@@ -140,7 +176,7 @@ p {
 }
 
 #smallbox {
-  height: 4em;
+  height: 3.25em;
   width: 5em;
   margin: .2em;
 }
@@ -156,6 +192,7 @@ p {
   background-blend-mode: multiply;
   color: white;
   text-decoration: none;
+  text-transform: none;
   padding: 5px 55px;
   margin: 0 0 30px 0;
 }
@@ -170,9 +207,13 @@ p {
   align-items: center;
 
   height: 3em;
-  background-color: #515151;
+  background-color: #54544f;
   color: white;
   box-shadow: 0px 6px 8px #888;
+}
+
+#tu {
+  font-size: 10px;
 }
 
 .gallery {
@@ -188,10 +229,28 @@ p {
 a {
   text-transform: uppercase;
   text-decoration: none;
-  color: grey;
+  color: #42423a;
+}
+
+#vcdh,
+#rmore,
+#vg,
+#lfs {
+  text-transform: uppercase;
+  color: black;
+}
+
+#search,
+#desc {
+  text-transform: none;
+  color: white;
+}
+
+#d {
+  text-align: left;
+  line-height: 175%;
 }
 
 #rmore {
-  color: black;
-  text-transform: none;
+  font-size: 14px;
 }
