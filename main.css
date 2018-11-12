@@ -43,10 +43,6 @@ header {
   justify-content: flex-end;
 }
 
-#login {
-  color: #bdbda6;
-}
-
 .smedia {
   display: flex;
   justify-content: flex-end;
@@ -61,7 +57,6 @@ body {
 
 footer {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   flex-direction: column;
 
@@ -70,7 +65,7 @@ footer {
   background-blend-mode: multiply;
   border: 1px solid lightgrey;
   height: 20em;
-  padding: 1em 2em 1em 2em;
+  padding: 0 0 1em 0;
 }
 
 p {
@@ -95,7 +90,8 @@ p {
 .banner {
   height: 3em;
   width: 70em;
-  background-color: #515151;
+  background-color: black;
+  opacity: 0.6;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -131,6 +127,91 @@ p {
   height: 37em;
   width: 75em;
   margin: 0 auto;
+}
+
+.project {
+  display: flex;
+  justify-content: center;
+}
+
+.pview {
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+}
+
+.info {
+  width: 30vw;
+}
+
+#pn {
+  text-align: left;
+  margin: 2em 0 0 5.5em;
+}
+
+#St_boxes {
+  height: 25em;
+  width: 76.5em;
+  margin-bottom: 2em;
+}
+
+#St_slider {
+  height: 25em;
+  width: 47em;
+  border-width: 1em .5em 1em .5em;
+}
+
+#altv {
+  flex-direction: row;
+  height: 10.2em;
+  width: 49.8em;
+}
+
+#altvb {
+  border: .6em solid white;
+  height: 9em;
+  width: 14em;
+  background-color: grey;
+}
+
+#user,
+#projt {
+  background-color: white;
+  width: 24.5em;
+}
+
+#projt {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+#user {
+  display: flex;
+  justify-content: flex-end;
+
+  height: 10em;
+  margin: 2em 0 1em 0;
+}
+
+#usrimg {
+  height: 9em;
+  width: 9em;
+  background-color: grey;
+  margin: .5em .5em .5em 1em;
+}
+
+.uinfo {
+  text-align: right;
+}
+
+#contactinfo {
+  font-size: 12;
+}
+
+#projt {
+  height: 28em;
 }
 
 .twitter,
@@ -217,6 +298,7 @@ p {
 .lower {
   display: flex;
   justify-content: space-between;
+  padding: 1.5em 2em 1em 2em;
 }
 
 #tu {
@@ -242,9 +324,31 @@ a {
 #vcdh,
 #rmore,
 #vg,
-#lfs {
+#lfs,
+#pn,
+#pt {
   text-transform: uppercase;
   color: black;
+}
+
+#pn,
+#pt {
+  color: grey;
+}
+
+#pt,
+#pd {
+  text-align: left;
+  width: 22.5em;
+}
+
+#pt {
+  margin-top: 1em;
+}
+
+#pd,
+#login {
+  color: #bfbcb6;
 }
 
 #search,
@@ -262,3 +366,11 @@ a {
 #rmore {
   font-size: 14px;
 }
+
+/****************************************************/
+
+/*@media screen and (max-width: 700px) {
+  #c3 {
+    display: none;
+  }
+}*/
