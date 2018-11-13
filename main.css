@@ -3,6 +3,26 @@
   src: url('assets/fonts/museo/museo-300-webfont.ttf');
 }
 
+body {
+  background-image: url('https://github.com/tyreil/web_1_project_2/blob/master/assets/textures/fabric_plaid.png?raw=true');
+  height: 100vh;
+  margin: 0;
+  padding: 2em 0 0 0;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  background-image: url('https://github.com/tyreil/web_1_project_2/blob/master/assets/textures/az_subtle.png?raw=true');
+  background-color: #b5b5a1;
+  background-blend-mode: multiply;
+  border: 1px solid lightgrey;
+  height: 20em;
+  padding: 0 0 1em 0;
+}
+
 a,
 p,
 div {
@@ -10,10 +30,22 @@ div {
   font-weight: 500;
 }
 
+a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #42423a;
+}
+
+p {
+  text-align: center;
+}
+
 header {
   width: 72em;
   margin: 0 auto;
 }
+
+/*******************************************classes*/
 
 .top {
   display: flex;
@@ -36,7 +68,6 @@ header {
   width: 30em;
 }
 
-
 .right {
   display: flex;
   flex-direction: column;
@@ -47,32 +78,6 @@ header {
   display: flex;
   justify-content: flex-end;
 }
-
-body {
-  background-image: url('https://github.com/tyreil/web_1_project_2/blob/master/assets/textures/fabric_plaid.png?raw=true');
-  height: 100vh;
-  margin: 0;
-  padding: 2em 0 0 0;
-}
-
-footer {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-
-  background-image: url('https://github.com/tyreil/web_1_project_2/blob/master/assets/textures/az_subtle.png?raw=true');
-  background-color: #b5b5a1;
-  background-blend-mode: multiply;
-  border: 1px solid lightgrey;
-  height: 20em;
-  padding: 0 0 1em 0;
-}
-
-p {
-  text-align: center;
-}
-
-/************************/
 
 .slider {
   display: flex;
@@ -101,23 +106,6 @@ p {
   color: white;
 }
 
-#la,
-#ra {
-  position: absolute;
-  height: 3em;
-  margin: auto;
-}
-
-#la {
-  top: 40%;
-  left: -2.3%;
-}
-
-#ra {
-  top: 40%;
-  right: -2.3%;
-}
-
 .boxes {
   display: flex;
   justify-content: space-around;
@@ -144,74 +132,15 @@ p {
   width: 30vw;
 }
 
-#pn {
-  text-align: left;
-  margin: 2em 0 0 5.5em;
-}
-
-#St_boxes {
-  height: 25em;
-  width: 76.5em;
-  margin-bottom: 2em;
-}
-
-#St_slider {
-  height: 25em;
-  width: 47em;
-  border-width: 1em .5em 1em .5em;
-}
-
-#altv {
-  flex-direction: row;
-  height: 10.2em;
-  width: 49.8em;
-}
-
-#altvb {
+.altvb {
   border: .6em solid white;
   height: 9em;
   width: 14em;
   background-color: grey;
 }
 
-#user,
-#projt {
-  background-color: white;
-  width: 24.5em;
-}
-
-#projt {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
-}
-
-#user {
-  display: flex;
-  justify-content: flex-end;
-
-  height: 10em;
-  margin: 2em 0 1em 0;
-}
-
-#usrimg {
-  height: 9em;
-  width: 9em;
-  background-color: grey;
-  margin: .5em .5em .5em 1em;
-}
-
 .uinfo {
   text-align: right;
-}
-
-#contactinfo {
-  font-size: 12;
-}
-
-#projt {
-  height: 28em;
 }
 
 .twitter,
@@ -219,33 +148,6 @@ p {
   height: 2em;
   border-radius: 8%;
   margin: 0 0 .5em .5em;
-}
-
-#bird {
-  height: 1.5em;
-}
-
-#search,
-#desc {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-#vg {
-  text-align: left;
-  padding-left: 2em;
-}
-
-#sbar {
-  display: flex;
-  align-items: center;
-
-  background-color: white;
-  color: grey;
-  width: 22em;
-  height: 2.5em;
-  padding-left: 1em;
 }
 
 .box {
@@ -256,10 +158,12 @@ p {
   background: #515151;
 }
 
-#smallbox {
+.smallbox {
   height: 3.25em;
   width: 5em;
   margin: .2em;
+
+  background: #515151
 }
 
 .viewmore {
@@ -301,10 +205,6 @@ p {
   padding: 1.5em 2em 1em 2em;
 }
 
-#tu {
-  font-size: 10px;
-}
-
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -315,10 +215,172 @@ p {
   width: 33%;
 }
 
-a {
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #42423a;
+/*******************************************IDs*/
+
+#la,
+#ra {
+  position: absolute;
+  height: 3em;
+  margin: auto;
+}
+
+#la {
+  top: 40%;
+  left: -2.3%;
+}
+
+#ra {
+  top: 40%;
+  right: -2.3%;
+}
+
+#pn {
+  text-align: left;
+  margin: 2em 0 0 5.5em;
+}
+
+#St_boxes {
+  height: 25em;
+  width: 76.5em;
+  margin-bottom: 2em;
+}
+
+#St_slider {
+  height: 25em;
+  width: 47em;
+  border-width: 1em .5em 1em .5em;
+  background-image: url('assets/pics/Baskerville Poster.jpg');
+  background-size: cover;
+}
+
+#altv {
+  flex-direction: row;
+  height: 10.2em;
+  width: 49.8em;
+}
+
+#b1 {
+  background-image: url('assets/pics/ALPHABET.jpg');
+  background-size: cover;
+}
+
+#b2 {
+  background-image: url('assets/pics/oldthumbnails1.jpg');
+  background-size: cover;
+}
+
+#b3 {
+  background-image: url('assets/pics/oldthumbnails2.jpg');
+  background-size: cover;
+}
+
+#lb1 {
+  background-image: url('assets/pics/deer1.jpg');
+  background-size: cover;
+}
+
+#lb2 {
+  background-image: url('assets/pics/collage.jpg');
+  background-size: cover;
+}
+
+#lb3 {
+  background-image: url('assets/pics/chmln.jpg');
+  background-size: cover;
+}
+
+#lb4 {
+  background-image: url('assets/pics/hmgbrd.jpg');
+  background-size: cover;
+}
+
+#lb5 {
+  background-image: url('assets/pics/mnstr.jpg');
+  background-size: cover;
+}
+
+#lb6 {
+  background-image: url('assets/pics/pattern.jpg');
+  background-size: cover;
+}
+
+#lb7 {
+  background-image: url('assets/pics/chmln2.jpg');
+  background-size: cover;
+}
+
+#lb8 {
+  background-image: url('assets/pics/hand thing.jpg');
+  background-size: cover;
+}
+
+#user,
+#projt {
+  background-color: white;
+  width: 24.5em;
+}
+
+#projt {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+#user {
+  display: flex;
+  justify-content: flex-end;
+
+  height: 10em;
+  margin: 2em 0 1em 0;
+}
+
+#usrimg {
+  height: 9em;
+  width: 9em;
+  background-color: grey;
+  background-image: url('assets/pics/self-portrait.jpg');
+  background-size: cover;
+  margin: .5em .5em .5em 1em;
+}
+
+#contactinfo {
+  font-size: 12;
+}
+
+#projt {
+  height: 28em;
+}
+
+#bird {
+  height: 1.5em;
+}
+
+#search,
+#desc {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#vg {
+  text-align: left;
+  padding-left: 2em;
+}
+
+#sbar {
+  display: flex;
+  align-items: center;
+
+  background-color: white;
+  color: grey;
+  width: 22em;
+  height: 2.5em;
+  padding-left: 1em;
+}
+
+#tu {
+  font-size: 10px;
 }
 
 #vcdh,
@@ -362,15 +424,6 @@ a {
   line-height: 175%;
 }
 
-
 #rmore {
   font-size: 14px;
 }
-
-/****************************************************/
-
-/*@media screen and (max-width: 700px) {
-  #c3 {
-    display: none;
-  }
-}*/
